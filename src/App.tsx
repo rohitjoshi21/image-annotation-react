@@ -67,6 +67,7 @@ export default function App() {
 
     const handleMouseMove = (e: Konva.KonvaEventObject<MouseEvent>) => {
         if (!isDrawing || !rect) return;
+        console.log(e);
         const pos = stageRef.current?.getPointerPosition();
         if (!pos) return;
 
